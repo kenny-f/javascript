@@ -21,9 +21,10 @@ describe('arrow function "inherits the context from the function where it is def
     }
   }
 
-  it('', () => {
+  it('"this" points to the person object', () => {
     const person = new Person()
     const createFullname = person.createFullname();
+    
     expect(createFullname())
       .toBe('Tony Stark')
   })
